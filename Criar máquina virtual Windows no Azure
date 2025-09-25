@@ -1,0 +1,60 @@
+Documentação Técnica: Criação de Máquina Virtual Windows no Portal do Azure
+
+
+Objetivo
+Criar uma máquina virtual (VM) com sistema operacional Windows no Portal do Azure, utilizando o guia rápido oficial da Microsoft, e compreender os principais conceitos envolvidos no processo.
+
+Pré-requisitos
+Conta ativa no Microsoft Azure
+Permissões para criar recursos no grupo de recursos desejado
+Navegador web atualizado
+
+
+Passo a Passo
+1. Acessar o Portal do Azure
+URL: https://portal.azure.com
+Autenticar com credenciais válidas
+
+2. Criar uma Máquina Virtual
+No menu lateral, clicar em "Máquinas Virtuais"
+Selecionar "Criar" > "Máquina Virtual"
+
+3. Configurações Básicas
+Assinatura: Escolher a assinatura ativa
+Grupo de Recursos: Criar um novo ou selecionar um existente
+Nome da VM: Exemplo: vm-windows-test
+Região: Escolher a mais próxima ou conforme necessidade (ex: Brazil South)
+Imagem: Selecionar Windows Server 2022 Datacenter ou outra versão desejada
+Tamanho da VM: Escolher conforme carga esperada (ex: Standard_D2s_v3)
+Usuário e Senha: Definir credenciais de administrador
+
+4. Configurações de Disco
+Tipo de disco do SO: SSD padrão ou premium
+Pode-se adicionar discos de dados posteriormente
+
+5. Configurações de Rede
+Criar ou selecionar uma rede virtual (VNet)
+Sub-rede: padrão ou personalizada
+IP público: habilitado para acesso remoto
+Porta de entrada: habilitar RDP (porta 3389) para acesso remoto
+
+6. Revisar e Criar
+Revisar todas as configurações
+Clicar em "Criar" para iniciar a implantação
+
+
+Conceitos Aprendidos
+Máquina Virtual (VM)
+Simulação de um computador físico hospedado na nuvem, com recursos dedicados como CPU, memória, disco e rede.
+Imagem do SO
+Template que define o sistema operacional e suas configurações iniciais. No Azure, há imagens prontas como Windows Server, Ubuntu, etc.
+
+Grupo de Recursos
+Contêiner lógico que agrupa recursos relacionados, facilitando gerenciamento e controle de acesso.
+Rede Virtual (VNet)
+Infraestrutura de rede privada dentro do Azure, que permite comunicação entre recursos e com a internet.
+IP Público e RDP
+Permite acesso remoto à VM via protocolo Remote Desktop (RDP), essencial para administração de servidores Windows.
+
+Considerações Finais
+A criação de VMs no Azure é um processo intuitivo, mas exige atenção às configurações de segurança, rede e custos.
