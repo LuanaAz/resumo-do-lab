@@ -1,0 +1,45 @@
+Documentação Técnica: Criação de Instância Gerenciada de SQL no Azure
+
+Objetivo:
+Criar uma Instância Gerenciada de SQL no Azure utilizando o Portal do Azure, seguindo o guia
+rápido oficial da Microsoft, e compreender os principais conceitos envolvidos.
+
+Pré-requisitos:
+- Conta ativa no Microsoft Azure
+- Permissões para criar recursos no grupo de recursos desejado
+- Navegador web atualizado
+
+Passo a Passo:
+1. Acessar o Portal do Azure: https://portal.azure.com
+2. No menu lateral, clicar em 'Instâncias Gerenciadas de SQL'
+3. Selecionar 'Criar' > 'Instância Gerenciada de SQL'
+4. Preencher as configurações básicas:
+ - Assinatura: selecionar a assinatura ativa
+ - Grupo de Recursos: criar novo ou selecionar existente
+ - Nome da instância: ex. sql-managed-luana
+ - Região: escolher a mais próxima ou conforme necessidade
+ - Camada de preço: escolher entre 'Uso geral' ou 'Crítico para negócios'
+ - Nome de usuário e senha do administrador
+5. Configurações de rede:
+ - Criar ou selecionar uma rede virtual
+ - Sub-rede dedicada à instância gerenciada
+6. Configurações adicionais:
+ - Backup, segurança, manutenção e tags conforme necessidade
+7. Revisar e criar:
+ - Verificar todas as configurações
+ - Clicar em 'Criar' para iniciar a implantação
+
+
+Conceitos Aprendidos:
+- Instância Gerenciada de SQL: serviço PaaS que oferece compatibilidade quase total com SQL
+Server, com alta disponibilidade e manutenção automatizada.
+- Grupo de Recursos: contêiner lógico para gerenciamento de recursos relacionados.
+- Rede Virtual: infraestrutura de rede privada no Azure que conecta recursos de forma segura.
+- Sub-rede dedicada: requisito para isolar a instância gerenciada de SQL.
+- Camadas de preço: definem desempenho, redundância e SLA da instância.
+
+
+Considerações Finais:
+A criação de uma Instância Gerenciada de SQL no Azure é ideal para modernização de bancos de
+dados com mínima intervenção administrativa. É importante planejar a rede e os custos envolvidos,
+além de garantir segurança e escalabilidade
